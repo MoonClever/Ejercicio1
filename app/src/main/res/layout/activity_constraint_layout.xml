@@ -4,6 +4,189 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ejercicios2.ConstraintLayoutActivity">
+    tools:context=".ejercicios2.ConstraintLayoutActivity"
+    android:background="#EFDECD">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHor1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHor2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHor3"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHor4"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="600dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvFonda"
+        android:text="Fonda 'Doña Pelos'"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/glHor1"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"/>
+
+    <TextView
+        android:id="@+id/tvCorrida"
+        android:text="Comida corrida"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/glHor2"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"/>
+
+    <TextView
+        android:id="@+id/tvBebidas"
+        android:text="Bebidas"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/glHor3"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"/>
+
+    <TextView
+        android:id="@+id/tvPostres"
+        android:text="Postres"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/glHor4"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"/>
+
+    <TextView
+        android:id="@+id/tvPastel"
+        android:text="Pastel...................50$"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvPostres"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        />
+
+    <TextView
+        android:id="@+id/tvFlan"
+        android:text="Flan.......................45$"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvPastel"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        />
+    <TextView
+        android:id="@+id/tvGelatina"
+        android:text="Gelatina................18$"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvFlan"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        />
+
+    <TextView
+        android:id="@+id/tvHorchata"
+        android:text="Horchata............30$"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvBebidas"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        />
+
+    <TextView
+        android:id="@+id/tvJamaica"
+        android:text="Jamaica.............30$"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvHorchata"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        />
+    <TextView
+        android:id="@+id/tvLimon"
+        android:text="Limon.................25$"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvJamaica"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        />
+
+    <TextView
+        android:id="@+id/tvSopa"
+        android:text="Sopa..................30$"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvCorrida"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        />
+
+    <TextView
+        android:id="@+id/tvTacos"
+        android:text="Jamaica.............30$"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvSopa"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        />
+    <TextView
+        android:id="@+id/tvQuesadillas"
+        android:text="Limon.................25$"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvTacos"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        />
+
+    <TextView
+        android:id="@+id/tvSlogan"
+        android:text="La mejor fonda de Mexico"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvFonda"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
